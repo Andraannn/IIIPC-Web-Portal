@@ -1,0 +1,13 @@
+FOR BACKEND
+1. venv\Scripts\activate in terminal
+2. cd backend
+3. python manage.py runserver
+
+FOR FRONTEND
+1. cd frontend
+2. npm start
+
+
+http://127.0.0.1:8000/admin/
+uname: andran
+pass: andrei4869
