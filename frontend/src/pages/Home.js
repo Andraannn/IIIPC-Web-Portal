@@ -7,6 +7,8 @@ import '../assets/css/styles.css';
 import '../assets/css/home.css';
 import { BsFillMegaphoneFill } from "react-icons/bs";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+
 
 function Home() {
   const [announcements, setAnnouncements] = useState([]);
@@ -128,13 +130,26 @@ function Home() {
                   <p className="no-announcements-message">No Announcements</p>
                 ) : (
                   <ul className="item-list">
-                    {paginatedAnnouncements.map(item => (
-                      <li key={item.id} className="item">
-                        <p className="item-title"><BsFillMegaphoneFill style={{ marginRight: '10px' }} /> {item.title}</p>
-                        <p className="item-date">{new Date(item.created_at).toLocaleString()}</p>
-                        <p className="item-description">{item.description}</p>
-                      </li>
-                    ))}
+                  {paginatedAnnouncements.map(item => (
+                    <li key={item.id} className="item">
+                      <p className="item-title">
+                        <BsFillMegaphoneFill style={{ marginRight: '10px' }} /> {item.title}
+                      </p>
+                      <p className="item-date">{new Date(item.created_at).toLocaleString()}</p>
+                      <p className="item-description">{item.description}</p>
+
+                      {item.url && (
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="learn-more-link"
+                        >
+                          Learn more <MdOutlineKeyboardDoubleArrowRight />
+                        </a>
+                      )}
+                    </li>
+                  ))}
                   </ul>
                 )}
                 {/* Pagination Controls */}
