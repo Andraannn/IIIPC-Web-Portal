@@ -42,9 +42,7 @@ const About = () => (
               </div>
           </div>
       </div>
-      <div className='faq-container'>
         <FAQAccordion />
-      </div>
       <div className="location-container">
           <div className="location-left">
               <h1>WHERE TO FIND US</h1>

@@ -1,5 +1,6 @@
-// FAQAccordion.jsx
 import React, { useState } from 'react';
+import { FaChevronDown } from "react-icons/fa";
+import faqImage from '../assets/img/faq-image.jpg';
 
 const FAQAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -28,22 +29,31 @@ const FAQAccordion = () => {
 
   return (
     <div className="faq-container">
-      <h1 className="faq-title">FAQ</h1>
-      {faqData.map((item, index) => (
-        <div
-          className={`faq-item ${activeIndex === index ? 'active' : ''}`}
-          key={index}
-        >
+      <div className='faq-left'>
+        <img src={faqImage} alt="FAQ" className='faq-image' />
+      </div>
+      <div className='faq-right'>
+        <h1 className="faq-title">Frequently Asked Questions</h1>
+        {faqData.map((item, index) => (
           <div
-            className="faq-question"
-            onClick={() => toggleAccordion(index)}
+            className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+            key={index}
           >
-            {item.question}
-            <span className="arrow">{activeIndex === index ? '▲' : '▼'}</span>
+            <div
+              className="faq-question"
+              onClick={() => toggleAccordion(index)}
+            >
+              {item.question}
+              <span className={`arrow ${activeIndex === index ? 'rotated' : ''}`}>
+                <FaChevronDown />
+              </span>
+            </div>
+            <div className={`faq-answer ${activeIndex === index ? 'open' : ''}`}>
+              {item.answer}
+            </div>
           </div>
-          {activeIndex === index && <div className="faq-answer">{item.answer}</div>}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
