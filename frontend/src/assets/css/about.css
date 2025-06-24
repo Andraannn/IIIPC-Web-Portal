@@ -1,0 +1,255 @@
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: #e5e5e5;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+
+.about-description {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-description h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.about-description h2 {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.about-description p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.about-btn {
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.about-btn:hover {
+  background: linear-gradient(135deg, rgb(104, 192, 239), rgb(132, 217, 77)); 
+  color: white;
+  border-color: transparent;
+}
+
+.about-image img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.services-container {
+    margin-top: 40px;
+    padding: 1rem 0 4rem 0;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.services-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.service-item {
+    background: linear-gradient(135deg, rgb(104, 192, 239), rgb(132, 217, 77));
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    padding: 24px 18px;
+    width: 260px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.service-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    margin: 12px 0 8px 0;
+    color: #1a1a1a;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  transition: background 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.arrow {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin: 70px 0;
+}
+
+.location-left {
+    flex: 1 1 300px;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-left h1 {
+    font-size: 4rem;
+    background: radial-gradient(rgb(19, 76, 114),rgb(67, 153, 87));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.location-right {
+    flex: 1 1 400px;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px 0 0;
+}
+
+.location-right iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.12);
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        padding: 1.5rem 1rem;
+    }
+    .about-container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 1rem;
+    }
+    .location-map {
+        max-width: 100%;
+        height: 260px;
+    }
+}
+
+@media (max-width: 800px) {
+    .location-container {
+        flex-direction: column;
+        gap: 0.2rem;
+        margin: 5px 0;
+    }
+    .location-left {
+        min-width: 0;
+    }
+    .location-right {
+        min-width: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 0.5rem 1rem;
+    }
+}

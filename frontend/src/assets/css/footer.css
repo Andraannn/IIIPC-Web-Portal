@@ -1,0 +1,111 @@
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.logo-images {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.logo-images img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 8px;
+}
+
+.footer-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-contact strong {
+    color: #eee;
+}
+
+.footer-contact a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icon {
+    height: 24px;
+    margin-left: 10px;
+    filter: grayscale(100%) brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* Hover effects only on desktop */
+@media (min-width: 1025px) {
+    .social-icon:hover {
+        animation: hop 0.5s ease infinite alternate;
+    }
+}
+
+@keyframes hop {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+}
