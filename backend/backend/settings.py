@@ -60,7 +60,6 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://172.16.2.161:3000",
     "http://192.168.1.13:3000",
     "http://localhost:3000",
 ]

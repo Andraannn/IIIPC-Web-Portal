@@ -20,9 +20,9 @@ const Footer = () => {
             <p>
               <strong>Address:</strong> Ground Floor, Mejia Bldg., Pala-o, Iligan City, 9200 Lanao del Norte, Philippines
             </p>
-            <p>
+            {/* <p>
               <strong>Contact Number:</strong> <i>(063) insert number</i>
-            </p>
+            </p> */}
             <p>
               <strong>Email:</strong>{' '}
               <a href="mailto:iiipc@iligan.gov.ph">iiipc@iligan.gov.ph</a>
