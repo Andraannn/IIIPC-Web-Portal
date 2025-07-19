@@ -10,6 +10,7 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 
+
 function Home() {
   const [announcements, setAnnouncements] = useState([]);
   const [announcementPage, setAnnouncementPage] = useState(0);
@@ -244,7 +245,7 @@ function Home() {
             </div>
           </section>
           <section className="flow-section">
-            <h2>IIIPC Process Flow</h2>
+            <h2>LEDIP Office Process Flow</h2>
             <div className="timeline">
               {steps.map((desc, index) => (
                 <div
@@ -317,7 +318,7 @@ function Home() {
             )}
           </section>
           <section className="services-section">
-            <h2>IIIPC Resources & Quick Links</h2>
+            <h2>LEDIP Resources & Quick Links</h2>
             <div className="resource-list">
               <div className="resource-card card-2">
                 <h3>Iligan Business Profiling and Accreditation Program</h3>

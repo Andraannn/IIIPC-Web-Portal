@@ -10,19 +10,19 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <div className="logo-images">
-            <img src={logo1} alt="Iligan City Logo" />
-            <img src={logo2} alt="IIIPC Logo" />
+            <img src={logo2} alt="Iligan City Logo" />
+            <img src={logo1} alt="IIIPC Logo" style={{ width: '45px', height: 'auto' }} />
           </div>
           <span className="footer-text">
-            Iligan Investment Incentives and Promotions Center
+            Local Economic Development and Investment Promotions Office
           </span>
           <div className="footer-contact">
             <p>
-              <strong>Address:</strong> Ground Floor, Mejia Bldg., Pala-o, Iligan City, 9200 Lanao del Norte, Philippines
+              <strong>Address:</strong> Ground Floor, Mejia Building, Doña Juana Road, Pala-o, Iligan City 9200 Lanao del Norte, Philippines
             </p>
-            {/* <p>
+            <p>
               <strong>Contact Number:</strong> <i>(063) insert number</i>
-            </p> */}
+            </p>
             <p>
               <strong>Email:</strong>{' '}
               <a href="mailto:iiipc@iligan.gov.ph">iiipc@iligan.gov.ph</a>
@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="footer-social">
           <a
-            href="https://www.facebook.com/iliganInvestmentsandPromotionsCenter/"
+            href="https://www.facebook.com/profile.php?id=61576488723855"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; 2025 Iligan Investment Incentives and Promotions Center. All rights reserved.
+        &copy; 2025 Local Economic Development and Investment Promotions. All rights reserved.
       </div>
     </footer>
   );

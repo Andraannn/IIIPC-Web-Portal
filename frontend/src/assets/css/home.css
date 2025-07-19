@@ -398,6 +398,7 @@
 .item-description {
   color: #444;
   font-size: 14px;
+  text-align: justify;
 }
 
 .no-announcements-message,

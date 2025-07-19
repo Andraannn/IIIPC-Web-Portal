@@ -20,7 +20,7 @@ function Header() {
         <div className="logo">
           <Link to="/" className="logo-link" onClick={closeMenu}>
             <img src={logo} alt="IIIPC Logo" />
-            <span className="logo-text">IIIPC</span>
+            <span className="logo-text">LEDIP</span>
           </Link>
         </div>
         <button
