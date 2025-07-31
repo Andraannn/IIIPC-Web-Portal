@@ -12,6 +12,12 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 
 function Home() {
+  const Redirect = () => {
+    window.open('https://tinyurl.com/IBAPsheet', '_blank');
+  };
+  const Redirect2 = () => {
+    window.open('https://drive.google.com/file/d/10kRSW68PHM3k8gJ43l2hSbDSnNu6qyYy/view?usp=sharing', '_blank');
+  };
   const [announcements, setAnnouncements] = useState([]);
   const [announcementPage, setAnnouncementPage] = useState(0);
   const announcementsPerPage = 3;
@@ -333,7 +339,14 @@ function Home() {
                 onClose={() => setResModal1(false)}
                 title="About Iligan Business Profiling and Accreditation Program (IBAP)"
               >
-                <p>Here is more information about the Iligan Business Profiling and Accreditation Program...</p>
+                <div className='IBAP-modal'>
+                  <p>
+                    To support this initiative, the LEDIP Office has developed a user-friendly online form that enables business owners to submit their information and documents electronically. This tool is designed to make the profiling and accreditation process more efficient and accessible for all businesses in Iligan.
+                  </p>
+                  <br />
+                  <p><i>For further details and to access the form, please click the button below:</i></p>
+                  <button className='btn IBAP-button' onClick={Redirect}>Click Here</button>
+                </div>
               </Modal>
 
               <div className="resource-card card-3">
@@ -349,7 +362,25 @@ function Home() {
                 onClose={() => setResModal2(false)}
                 title="Incentives Application Checklist"
               >
-                <p>Here is more information about the Iligan Business Profiling and Accreditation Program...</p>
+                <div className='Incentives-modal'>
+                  <p>Fiscal Incentives</p>
+                    <ul>
+                      <li>Business Tax Exemptions(up to 9 years)</li>
+                      <li>Real Property Tax(RPT) Exemptions(up to 2 years)</li>
+                      <li> Graduated Incentives based onEnterprise Size & Employment Generation</li>
+                    </ul>
+                  <p>Non-Fiscal Incentives</p>
+                    <ul>
+                      <li>Aftercare Services & Compliance Assistance</li>
+                      <li>Fast-tracked Business Permits & Licensing</li>
+                      <li>Support in Site Selection & Utilities</li>
+                      <li>Access to National & Local Networks(DTI, PPP Center, BOI, etc.)</li>
+                      <li>Business Matching & Expansion Support</li>
+                    </ul>
+                  <br />
+                  <p><i>To view the general requirements, click on the links below:</i></p>
+                  <button className='btn Incentives-button' onClick={Redirect2}>Click Here</button>
+                </div>
               </Modal>
 
               <div className="resource-card card-4">

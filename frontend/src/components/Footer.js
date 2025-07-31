@@ -20,9 +20,9 @@ const Footer = () => {
             <p>
               <strong>Address:</strong> Ground Floor, Mejia Building, Doña Juana Road, Pala-o, Iligan City 9200 Lanao del Norte, Philippines
             </p>
-            <p>
+            {/* <p>
               <strong>Contact Number:</strong> <i>(063) insert number</i>
-            </p>
+            </p> */}
             <p>
               <strong>Email:</strong>{' '}
               <a href="mailto:iiipc@iligan.gov.ph">iiipc@iligan.gov.ph</a>
@@ -39,7 +39,7 @@ const Footer = () => {
             <FaFacebook size={24} color="#fff" className='social-icon'/>
           </a>
           <a
-            href="https://iligan.gov.ph/forbusiness/iiipc?3993053"
+            href="https://iligan.gov.ph"
             target="_blank"
             rel="noopener noreferrer"
           >

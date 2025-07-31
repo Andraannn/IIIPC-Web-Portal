@@ -127,6 +127,31 @@
     align-self: flex-start;
 }
 
+.IBAP-modal p, .Incentives-modal p {
+    text-align: justify;
+}
+
+.IBAP-modal button, .Incentives-modal button {
+    margin-top: auto;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.5s ease, color 0.5s ease;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.IBAP-modal button:hover, .Incentives-modal button:hover {
+    background: linear-gradient(135deg, rgb(104, 192, 239), rgb(132, 217, 77)); 
+    color: white;
+    border-color: transparent;
+}
+
 .process-btn:hover {
     background: linear-gradient(135deg, rgb(104, 192, 239), rgb(132, 217, 77)); 
     color: white;
