@@ -44,11 +44,11 @@ function Home() {
   const hasPrevEvents = eventPage > 0;
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/announcements/")
+    fetch(`${process.env.REACT_APP_API_URL}/announcements/`)
       .then(res => res.json())
       .then(data => setAnnouncements(data));
 
-    fetch("http://localhost:8000/api/events/")
+    fetch(`${process.env.REACT_APP_API_URL}/events/`)
       .then(res => res.json())
       .then(data => setEvents(data));
   }, []);
