@@ -73,7 +73,6 @@ footer {
     transition: filter 0.3s ease;
 }
 
-/* Hover effects only on desktop */
 @media (min-width: 1025px) {
     .social-icon:hover {
         animation: hop 0.5s ease infinite alternate;
@@ -89,7 +88,6 @@ footer {
     }
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;

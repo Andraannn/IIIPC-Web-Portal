@@ -130,7 +130,6 @@ function Home() {
         <main className='main-content'>
           <section className="whatsnew-section">
             <div className="columns">
-              {/* Announcements */}
               <div className="column announcements">
                 <h3 className="column-title">ANNOUNCEMENTS</h3>
                 {paginatedAnnouncements.length === 0 ? (
@@ -159,7 +158,6 @@ function Home() {
                   ))}
                   </ul>
                 )}
-                {/* Pagination Controls */}
                 <div className="pagination-controls">
                   <button disabled={!hasPrevAnnouncements} onClick={() => setAnnouncementPage(p => p - 1)}>
                     <GrPrevious />
@@ -169,7 +167,6 @@ function Home() {
                   </button>
                 </div>
               </div>
-              {/* Events */}
               <div className="column events">
                 <h3 className="column-title">UPCOMING EVENTS</h3>
                 {paginatedEvents.length === 0 ? (
@@ -190,7 +187,6 @@ function Home() {
                       let dateBox;
 
                       if (!endDate) {
-                        // Single-day event
                         dateBox = (
                           <div className="event-date-box">
                             <div className="event-month">{month}</div>
@@ -198,7 +194,6 @@ function Home() {
                           </div>
                         );
                       } else if (sameMonth && sameYear) {
-                        // Multi-day, same month
                         dateBox = (
                           <div className="event-date-box">
                             <div className="event-month">{month}</div>
@@ -206,7 +201,6 @@ function Home() {
                           </div>
                         );
                       } else {
-                        // Multi-day, different month/year — cross-month style
                         const startMonth = startDate.toLocaleString("default", { month: "short" }).toUpperCase();
                         const startDay = startDate.getDate();
                         const endMonth = endDate.toLocaleString("default", { month: "short" }).toUpperCase();
@@ -238,7 +232,6 @@ function Home() {
                     })}
                   </ul>
                 )}
-                {/* Pagination Controls */}
                 <div className="pagination-controls">
                   <button disabled={!hasPrevEvents} onClick={() => setEventPage(p => p - 1)}>
                     <GrPrevious />

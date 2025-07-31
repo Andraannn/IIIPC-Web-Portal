@@ -35,8 +35,6 @@ const About = () => (
 
         <div className="services-container">
           <h1>COST OF DOING BUSINESS</h1>
-
-          {/* Power Rates */}
           <h2>Power Rates:</h2>
           <div className="services-list">
             {[
@@ -54,7 +52,6 @@ const About = () => (
             ))}
           </div>
 
-          {/* Water Rates */}
           <h2>Water Rates:</h2>
           <div className="services-list">
             {[
@@ -86,7 +83,6 @@ const About = () => (
           </div>
         </div>
 
-        {/* Real Estate Section */}
         <section className="real-estate-section">
           <h2 className="section-title">Real Estate</h2>
           <p className="section-subtitle">
@@ -112,7 +108,6 @@ const About = () => (
           </div>
         </section>
 
-        {/* Location Map */}
         <div className="location-container">
           <div className="location-left">
             <h1>WHERE TO FIND US</h1>

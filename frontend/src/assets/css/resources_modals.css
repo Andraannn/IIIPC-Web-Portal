@@ -37,7 +37,6 @@
   animation: slideOut 0.3s ease-in forwards;
 }
 
-/* Close icon */
 .modal-close-icon {
   position: absolute;
   top: 12px;
@@ -54,7 +53,6 @@
   color: #000;
 }
 
-/* Keyframe Animations */
 @keyframes slideIn {
   from {
     transform: translateY(-40px);
