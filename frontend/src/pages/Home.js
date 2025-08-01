@@ -10,7 +10,6 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 
-
 function Home() {
   const Redirect = () => {
     window.open('https://tinyurl.com/IBAPsheet', '_blank');
@@ -42,6 +41,10 @@ function Home() {
 
   const hasNextEvents = (eventPage + 1) * eventsPerPage < sortedEvents.length;
   const hasPrevEvents = eventPage > 0;
+
+  useEffect(() => {
+    document.title = "LEDIP Portal | Home";
+  }, []);
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/announcements/`)

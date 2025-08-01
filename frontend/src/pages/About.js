@@ -15,6 +15,10 @@ const realEstateData = [
   { title: 'Subdivision', from: '4,520.00', to: '2,510.00' },
 ];
 
+useEffect(() => {
+  document.title = "LEDIP Portal | About";
+}, []);
+
 const About = () => (
   <>
     <div className='page-container'>
