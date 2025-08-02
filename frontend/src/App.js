@@ -1,3 +1,9 @@
+/**
+ * Developed by: Andrei Gabrielle A. Adlawan
+ * Copyright © 2025 Andrei Gabrielle A. Adlawan
+ * License terms in LICENSE.txt
+ */
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
@@ -6,11 +12,9 @@ import Contact from './pages/ContactUs';
 import BackToTopButton from './components/BackToTopButton';
 
 
-// This component handles route rendering and conditional UI
 const AppContent = () => {
   const location = useLocation();
 
-  // Show BackToTopButton only on Home and About pages
   const showBackToTop =
     location.pathname === '/' || location.pathname === '/about';
 
@@ -22,13 +26,11 @@ const AppContent = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      {/* Conditionally render the button */}
       {showBackToTop && <BackToTopButton />}
     </div>
   );
 };
 
-// Root App with Router
 function App() {
   return (
     <Router>
